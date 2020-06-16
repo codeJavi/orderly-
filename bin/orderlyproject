@@ -3,7 +3,7 @@
 
 require './lib/orderlyproject'
 
-#require "project_cli
+#require "project_cli"
 #require "bundler/setup"
 
 orderlyproject::CLI.new.call
