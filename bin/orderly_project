@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require './lib/orderly_project'
+
+orderlyproject::CLI.new.call
