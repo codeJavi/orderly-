@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require_relative './lib/orderly_project'
+require './lib/orderly_project'
 
 orderlyproject::CLI.new.call
