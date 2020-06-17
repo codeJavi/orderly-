@@ -1,9 +1,10 @@
 #!/usr/bin/env ruby
 
 
-require './lib/orderlyproject'
+require './lib/orderly'
 
-#require "project_cli"
-#require "bundler/setup"
 
-orderlyproject::CLI.new.call
+
+# CLI.new.call
+
+API.get_data
