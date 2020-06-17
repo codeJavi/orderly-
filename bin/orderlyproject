@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 
-
+require "./orderly/version"
 require './lib/orderly'
+
 
 
 
