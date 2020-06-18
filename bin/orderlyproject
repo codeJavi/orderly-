@@ -2,7 +2,7 @@
                  
 require "./lib/orderly/version"
 
-#CLI.new.greet 
+#CLI.new.call  
 
 
 
