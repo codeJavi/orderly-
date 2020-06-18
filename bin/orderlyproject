@@ -1,11 +1,8 @@
 #!/usr/bin/env ruby
+                 
+require "./lib/orderly/version"
 
-require "./orderly/version"
-require './lib/orderly'
+#CLI.new.greet 
 
 
 
-
-# CLI.new.call
-
-API.get_data

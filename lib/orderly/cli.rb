@@ -1,7 +1,9 @@
-class Orderly
+class Orderly::CLI
   
-  def call 
-    puts "Top Cruise Deals"
+  def greet 
+    puts "Hello! Where Can we Plan Your Next Vacation?:"
   end 
+  
+end 
   
   
