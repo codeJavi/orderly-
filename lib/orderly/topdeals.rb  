@@ -5,6 +5,17 @@ class Orderly::Topdeals
   def self.Topdeals 
    #I should return a bunch of instances of Topdeals
    #Scrape all 3 websites for RC, Virgin, and Norweigan and then return deals based on that data 
+   
+   def self. scrape_deals 
+   #Go to websites, find the deals, extract the properties, and instantiate a deal
+   deals = []
+   
+   deals 
+  end 
+   Topdeals::dealscraper.new("https:www.royalcaribbean.com")
+   Topdeals::dealscraper.new("https:www.virginvoyages.com")
+   Topdeals::dealscraper.new("https:www.norweigancruise.com")
+   
   1. #list deals for rc 
   2. #list deals for virgin
   3. #list deals for Norweigan 
