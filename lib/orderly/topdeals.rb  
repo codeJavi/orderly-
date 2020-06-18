@@ -1,8 +1,10 @@
 class Orderly::Topdeals
   
   attr_accessor :name, :price, :availability, :url 
+  
   def self.Topdeals 
    #I should return a bunch of instances of Topdeals
+   #Scrape all 3 websites for RC, Virgin, and Norweigan and then return deals based on that data 
   1. #list deals for rc 
   2. #list deals for virgin
   3. #list deals for Norweigan 

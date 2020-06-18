@@ -10,10 +10,14 @@ class Orderly::CLI
   def list top_deals
     # here doc 
     puts "Hello! Are you ready to book your next Cruise?:"
+    @deals = orderly::topdeals.all 
+    @deals.each.with_index(1) do |deal, i|
+      puts " #{i}. #{deal.name} - #{deal.price} - #{deal.availability}" 
+    end 
   1. #list deals for rc 
   2. #list deals for virgin
   3. #list deals for Norweigan 
-  @deals = orderly:deal.all
+  @deals = orderly:top_deals.all
   end 
  
  def menu 
@@ -21,6 +25,14 @@ class Orderly::CLI
    input = nil
    while input != "exit"
    input = gets.strip.downcase
+   
+   if input.to_i > 0 
+     the_deal = @deals[input.to_i-1]
+      puts "#{i}. #{deal.name} - #{deal.price} - #{deal.availability}" 
+   elseif input == "list"
+     list_deals
+   else 
+     
    case input 
    when "1"
       puts "More info on deal 1..."

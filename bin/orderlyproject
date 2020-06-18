@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
+
+require "bundler/setup"
 require "./lib/orderly/version"
-require './lib/orderly/cli'
-require './lib/orderly/topdeals'
 
-
+cli.new.call
 
 
 
