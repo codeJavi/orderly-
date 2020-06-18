@@ -1,0 +1,6 @@
+class Orderly::Topdeals
+
+  def self.Topdeals 
+   #I should return a bunch of instances of Topdeals
+  end 
+

@@ -1,5 +1,4 @@
 #!/usr/bin/env ruby
-                 
 require "./lib/orderly/version"
 
 #CLI.new.call  
