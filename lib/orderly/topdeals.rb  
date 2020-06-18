@@ -1,6 +1,33 @@
 class Orderly::Topdeals
-
+  
+  attr_accessor :name, :price, :availability, :url 
   def self.Topdeals 
    #I should return a bunch of instances of Topdeals
+  1. #list deals for rc 
+  2. #list deals for virgin
+  3. #list deals for Norweigan 
+   DOC
+   deal_1 = self.new 
+   deal_1.name = "list RC"
+   deal_1.price = "list RC price" 
+   deal_1.availability = true 
+   deal_1.url = "#copy and paste URL"
+   
+   deal_2 = self.new 
+   deal_2.name = "list Vrgin"
+   deal_2.price = "list Vrgin  price" 
+   deal_2.availablility = true 
+   deal_2.url = "#copy and paste URL"
+   
+  deal_3 = self.new 
+   deal_3.name = "list Norweigan"
+   deal_3.price = "list Norweigan" 
+   deal_3.availability = true 
+   deal_3.url = "#copy and paste URL Norweigan"
+   end 
+   
+  [deal_1, deal_2, deal_3]
   end 
+
+  
 

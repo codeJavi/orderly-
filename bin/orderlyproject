@@ -1,7 +1,9 @@
 #!/usr/bin/env ruby
 require "./lib/orderly/version"
+require './lib/orderly/cli'
+require './lib/orderly/topdeals'
 
-#CLI.new.call  
+
 
 
 
