@@ -6,12 +6,56 @@ class Orderly::Topdeals
    #I should return a bunch of instances of Topdeals
    #Scrape all 3 websites for RC, Virgin, and Norweigan and then return deals based on that data 
    
-   def self. scrape_deals 
+   def self.scrape_deals 
    #Go to websites, find the deals, extract the properties, and instantiate a deal
    deals = []
    
+   deals << self.scrape_royal 
+   deals << self.scrape_virgin
+   deals << self.scrape_norweigan 
+   
+   
    deals 
+  end
+  
+  def self.scrape_royal 
+    deal.doc = Nokogiri::HTML(open("https://royalcaribbean.com"))
+    
+    deal.name = doc.search 
+    deal.price = doc.search 
+    deal.url =
+    deal.availability = true 
+    
+    binding.pry 
+    
+    deal 
   end 
+  
+  def self.scrape_virgin 
+    deal.doc = Nokogiri::HTML(open("https://royalcaribbean.com"))
+    
+    deal.name = doc.search 
+    deal.price = doc.search 
+    deal.url =
+    deal.availability = true 
+    
+    deal
+  end 
+  
+  def self.scrape_norweigan 
+     deal.doc = Nokogiri::HTML(open("https://royalcaribbean.com"))
+    
+    deal.name = doc.search 
+    deal.price = doc.search 
+    deal.url =
+    deal.availability = true 
+    
+    deal
+  end 
+  
+  
+  
+  
    Topdeals::dealscraper.new("https:www.royalcaribbean.com")
    Topdeals::dealscraper.new("https:www.virginvoyages.com")
    Topdeals::dealscraper.new("https:www.norweigancruise.com")
