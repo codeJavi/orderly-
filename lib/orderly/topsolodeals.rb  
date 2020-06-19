@@ -1,8 +1,8 @@
-class Orderly::topdeals
+class Orderly::topsolodeals
   
   attr_accessor :name, :date, :price, :url 
   
-  def self.topdeals 
+  def self.topsolodeals 
    #I should return a bunch of instances of Topdeals
    #Scrape all 3 websites for RC, Virgin, and Norweigan and then return deals based on that data 
    
@@ -19,12 +19,13 @@ class Orderly::topdeals
   end
   
   def self.scrape_royal 
-    deal.doc = Nokogiri::HTML(open("https://royalcaribbean.com"))
+    deal.doc = Nokogiri::HTML(open("https://www.royalcaribbean.com"))
     
     deal.name = doc.search 
+    deal.date = 
     deal.price = doc.search 
     deal.url =
-    deal.availability = true 
+    
     
     binding.pry 
     
@@ -32,23 +33,25 @@ class Orderly::topdeals
   end 
   
   def self.scrape_virgin 
-    deal.doc = Nokogiri::HTML(open("https://royalcaribbean.com"))
+    deal.doc = Nokogiri::HTML(open("https://www.virginvoyages.com))
     
     deal.name = doc.search 
+    deal.price =
     deal.price = doc.search 
     deal.url =
-    deal.availability = true 
+   
     
     deal
   end 
   
   def self.scrape_norweigan 
-     deal.doc = Nokogiri::HTML(open("https://royalcaribbean.com"))
+     deal.doc = Nokogiri::HTML(open("https://www.ncl.com/"))
     
     deal.name = doc.search 
+    deal.price = 
     deal.price = doc.search 
     deal.url =
-    deal.availability = true 
+ 
     
     deal
   end 
