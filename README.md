@@ -2,7 +2,7 @@
 
 # Orderly
 
-Welcome cruisers! If you are a solo cruiser planning on sailing out of Miami into the caribbean, look no further. We are here to find you a top deal for a perfect getaway. 
+Welcome cruisers! If you are a solo cruiser planning on sailing out of Miami into the Caribbean, look no further. We are here to find you a top deal for a perfect getaway trip. 
 
 
 ## Installation
