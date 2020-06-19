@@ -1,12 +1,12 @@
-class Orderly::Topdeals
+class Orderly::topdeals
   
-  attr_accessor :name, :price, :availability, :url 
+  attr_accessor :name, :date, :price, :url 
   
-  def self.Topdeals 
+  def self.topdeals 
    #I should return a bunch of instances of Topdeals
    #Scrape all 3 websites for RC, Virgin, and Norweigan and then return deals based on that data 
    
-   def self.scrape_deals 
+   def self.scrapetopdeals 
    #Go to websites, find the deals, extract the properties, and instantiate a deal
    deals = []
    
@@ -65,22 +65,23 @@ class Orderly::Topdeals
   3. #list deals for Norweigan 
    DOC
    deal_1 = self.new 
-   deal_1.name = "list RC"
-   deal_1.price = "list RC price" 
-   deal_1.availability = true 
-   deal_1.url = "#copy and paste URL"
+   deal_1.name = "royal caribbean"
+   deal_1.date = "8/7/20 - 8/10/20
+   deal_1.price = "$779.00"
+   deal_1.url = "https://www.royalcaribbean.com/booking/location?accessCabin=false&connectedRooms=false&destinationCode=BAHAM&icid=hprtrg_conten_crb_hm_hero_2058&packageCode=NV03S128&roomIndex=1&sailDate=2020-08-07&selectedCurrencyCode=USD&shipCode=NV&step=stateroom"
    
    deal_2 = self.new 
-   deal_2.name = "list Vrgin"
-   deal_2.price = "list Vrgin  price" 
-   deal_2.availablility = true 
-   deal_2.url = "#copy and paste URL"
+   deal_2.name = "virgin voyages"
+   deal_2.date = "10/16/20 - 10/21/20"
+   deal_2.price = "$2,402.00" 
+   deal_2.url = "https://www.virginvoyages.com/book/voyage-planner/summary?cabinType=TC&cabins=1&currencyCode=USD&fromDate=2020-10-01&packageCode=5NPP&sailors=1&shipCode=SC&toDate=2020-12-31&voyageId=SC2010165NPP"
    
   deal_3 = self.new 
-   deal_3.name = "list Norweigan"
-   deal_3.price = "list Norweigan" 
+   deal_3.name = "Norweigan"
+   deal_3.price = "01/08/21 - 01/11/21"
+   deal_3.price = "$686.14" 
    deal_3.availability = true 
-   deal_3.url = "#copy and paste URL Norweigan"
+   deal_3.url = "https://www.ncl.com/booking-quote?guestCount=1&itineraryCode=PEARL3MIAEYWNASMIA&shipCode=PEARL&sailMonths=4294940554&selectedStateroomMeta=INSIDE&berthedCategoryCode=I4&pricedCategoryCode=I4&voyageId=16141318&activeStep=1&activePanel=4&upgradeSelected=false&sailDate=2021-01-08"
    end 
    
   [deal_1, deal_2, deal_3]

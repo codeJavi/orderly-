@@ -3,7 +3,7 @@
 require "bundler/setup"
 require "./lib/orderly/version"
 
-cli.new.call
+# cli.new.call 
 
 
 

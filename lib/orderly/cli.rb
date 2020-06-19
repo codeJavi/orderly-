@@ -1,23 +1,23 @@
-class Orderly::CLI
+class orderly::CLI 
   
   def call  
-    list top_deals 
+    list topsolodeals   
     menu 
     goodbye 
     
   end 
   
-  def list top_deals
+  def list topsolodeals 
     # here doc 
-    puts "Hello! Are you ready to book your next Cruise?:"
-    @deals = orderly::topdeals.all 
-    @deals.each.with_index(1) do |deal, i|
-      puts " #{i}. #{deal.name} - #{deal.price} - #{deal.availability}" 
+    puts "Welcome Cruiser! below are the current carribean deals for the solo sailers from Miami. Please choose from the 3 cruise lines below:"
+    @topsolodeals = orderly::topsolodeals.all 
+    @topsolodeals.each.with_index(1) do |deal, i|
+      puts " #{i}. #{topsolodeals.name} - #{topsolodeals.date} - #{topsolodeals.price}" 
     end 
   1. #list deals for rc 
   2. #list deals for virgin
   3. #list deals for Norweigan 
-  @deals = orderly:top_deals.all
+  @deals = orderly:topsolodeals.all
   end 
  
  def menu 
